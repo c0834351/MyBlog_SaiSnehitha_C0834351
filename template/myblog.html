@@ -11,24 +11,39 @@
 <body>
     <div id="container">
         <header>
-            <a href="index.html"><img src="images/welcomeblog.jpeg" alt="My Personal Blog" height="275" width="845"
-                    class="blog"></a>
+            <a href="index.html"><img src="images/welcomeblog.jpeg" alt="My Personal Blog" class="blog"></a>
         </header>
-        <nav>
-            <a href="index.html">Home</a> &nbsp; &nbsp;
-            <a href="about.html">About</a> &nbsp; &nbsp;
-            <a href="interest.html">Interest</a> &nbsp; &nbsp;
-            <a href="skills.html">Skills</a> &nbsp; &nbsp;
-            <a href="contact.html">Contact</a> &nbsp; &nbsp;
-        </nav>
-        <main>
-
-        </main>
+        <div class="navbar">
+            <nav>
+                <ul id="navOptions">
+                    <li><a href="index.html">Home</a> </li>
+                    <li><a href="about.html">About</a> </li>
+                    <li><a href="interest.html">Interest</a> </li>
+                    <li><a href="skills.html">Skills</a> </li>
+                    <li><a href="contact.html">Contact</a> </li>
+                </ul>
+            </nav>
+            <img src="images/menu.png" alt="" class="menu-icon" onclick="menuToggle()">
+        </div>
+        <main></main>
+        <hr class="line">
         <footer>
             &copy; Copyright 2022. All rights reserved <br>
             <a href="mailto:bhattasaisnehitha@gmail.com">bhattasaisnehitha@gmail.com</a>
         </footer>
     </div>
+    <script>
+        var navOptions = document.getElementById("navOptions");
+        navOptions.style.maxHeight = "0px";
+        function menuToggle() {
+            if (navOptions.style.maxHeight == "0px") {
+                navOptions.style.maxHeight = "200px"
+            }
+            else {
+                navOptions.style.maxHeight = "0px"
+            }
+        }
+    </script>
 </body>
 
 </html>

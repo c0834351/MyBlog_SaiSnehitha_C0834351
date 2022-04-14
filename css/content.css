@@ -1,0 +1,64 @@
+/* About Page Css Styles*/
+
+h1{
+    font-size: 30px;
+}
+
+/* Interest Page CSS styles */
+.col-2 h1{
+    padding-left: 20px;
+}
+
+/* Skills Page CSS styles */
+
+.box{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 12px 12px 12px grey;
+}
+
+.small-box{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+.box-1{
+    flex-basis: 50%;
+    max-width: 400px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: rgb(199, 244, 199);
+    border-radius: 15px;
+}
+
+.box h1{
+    padding: 20px;
+}
+
+/*responsive*/
+
+@media only screen and (max-width: 600px) {
+    .small-box {
+        text-align: left;
+    }
+    .box-1 {
+        flex-basis: 100%;
+    }     
+    
+}
+@media only screen and (max-width: 1000px) {
+    .small-box {
+        text-align: left;
+    }
+    .box-1 {
+        flex-basis: 100%;
+        padding: 0 50px;
+    }     
+}

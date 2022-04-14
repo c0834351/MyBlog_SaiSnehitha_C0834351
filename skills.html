@@ -1,48 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/content.css">
+    <link rel="stylesheet" href="css/main.css">
     <title>My Personal Blog</title>
 </head>
+
 <body>
-    <div id ="container">
-    <header>
-        <a href="index.html"><img src="images/welcomeblog.jpeg" alt="My Personal Blog" height="275" width="845" class="blog"></a>
-    </header>
-    <nav>
-        <a href="index.html">Home</a> &nbsp; &nbsp;
-        <a href="about.html">About</a> &nbsp; &nbsp;
-        <a href="interest.html">Interest</a> &nbsp; &nbsp;
-        <a href="skills.html">Skills</a> &nbsp; &nbsp;
-        <a href="contact.html">Contact</a> &nbsp; &nbsp;
-    </nav>
-    <main>
-        <h2>Technical Skills</h2>
-        <ul>
-            <li>Html</li>
-            <li>CSS</li>
-            <li>Java</li>
-            <li>Swift</li>
-            <li>Springboot</li>
-            <li>Angular</li>
-        </ul>
-        <h2>Soft Skills</h2>
-        <ul>
-            <li>Leadership Skills</li>
-            <li>Teamwork</li>
-            <li>Communication Skills</li>
-            <li>Problem-Solving Skills</li>
-            <li>Work Ethic</li>
-            <li>Interpersonal Skills</li>
-            <li>Flexibility/Adaptability</li>
-        </ul>
-    </main>
-    <footer>
-        &copy; Copyright 2022. All rights reserved <br>
-        <a href="mailto:bhattasaisnehitha@gmail.com">bhattasaisnehitha@gmail.com</a>
-    </footer>
-</div>
+    <div id="container">
+        <header>
+            <a href="index.html"><img src="images/welcomeblog.jpeg" alt="My Personal Blog" class="blog"></a>
+        </header>
+        <div class="navbar">
+            <nav>
+                <ul id="navOptions">
+                    <li><a href="index.html">Home</a> </li>
+                    <li><a href="about.html">About</a> </li>
+                    <li><a href="interest.html">Interest</a> </li>
+                    <li><a href="skills.html">Skills</a> </li>
+                    <li><a href="contact.html">Contact</a> </li>
+                </ul>
+            </nav>
+            <img src="images/menu.png" alt="" class="menu-icon" onclick="menuToggle()">
+        </div>
+        <main>
+            <div class="box">
+                <h1>Skills and Experience</h1>
+                <div class="small-box">
+                    
+                    <div class="box-1">
+                        <h2>Technical Skills</h2>
+                        <ul>
+                            <li>Html</li>
+                            <li>CSS</li>
+                            <li>Java</li>
+                            <li>Swift</li>
+                            <li>Springboot</li>
+                            <li>Angular</li>
+                        </ul>
+                    </div>
+                    <div class="box-1">
+                        <h2>Soft Skills</h2>
+                        <ul>
+                            <li>Leadership Skills</li>
+                            <li>Teamwork</li>
+                            <li>Communication Skills</li>
+                            <li>Problem-Solving Skills</li>
+                            <li>Work Ethic</li>
+                            <li>Interpersonal Skills</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="experience">
+                    <!--     -->
+                </div>
+
+            </div>
+
+
+        </main>
+        <hr class="line">
+        <footer>
+            &copy; Copyright 2022. All rights reserved <br>
+            <a href="mailto:bhattasaisnehitha@gmail.com">bhattasaisnehitha@gmail.com</a>
+        </footer>
+    </div>
+    <script>
+        var navOptions = document.getElementById("navOptions");
+        navOptions.style.maxHeight = "0px";
+        function menuToggle() {
+            if (navOptions.style.maxHeight == "0px") {
+                navOptions.style.maxHeight = "200px"
+            }
+            else {
+                navOptions.style.maxHeight = "0px"
+            }
+        }
+    </script>
 </body>
+
 </html>

@@ -12,40 +12,70 @@
 <body>
     <div id="container">
         <header>
-            <a href="index.html"><img src="images/welcomeblog.jpeg" alt="My Personal Blog" height="275" width="845"
-                    class="blog"></a>
+            <a href="index.html"><img src="images/welcomeblog.jpeg" alt="My Personal Blog" class="blog"></a>
         </header>
-        <nav>
-            <a href="index.html">Home</a> &nbsp; &nbsp;
-            <a href="about.html">About</a> &nbsp; &nbsp;
-            <a href="interest.html">Interest</a> &nbsp; &nbsp;
-            <a href="skills.html">Skills</a> &nbsp; &nbsp;
-            <a href="contact.html">Contact</a> &nbsp; &nbsp;
-        </nav>
+        <div class="navbar">
+            <nav>
+                <ul id="navOptions">
+                    <li><a href="index.html">Home</a> </li>
+                    <li><a href="about.html">About</a> </li>
+                    <li><a href="interest.html">Interest</a> </li>
+                    <li><a href="skills.html">Skills</a> </li>
+                    <li><a href="contact.html">Contact</a> </li>
+                </ul>
+            </nav>
+            <img src="images/menu.png" alt="" class="menu-icon" onclick= "menuToggle()">
+        </div>
         <main>
-            <p>
-                “About Me” pages have a unique way of engaging and informing your visitors.
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-2">
+                        <p>
+                            “About Me” pages have a unique way of engaging and informing your visitors.
 
-                This is because they do so in a more personal manner.
+                            This is because they do so in a more personal manner.
 
-                And, unlike other pages, this page speaks volumes about the whole blog itself as well as the blogger who
-                runs it.
+                            And, unlike other pages, this page speaks volumes about the whole blog itself as well as the
+                            blogger who
+                            runs it.
 
-                This is why it’s not surprising for experienced bloggers to take their time in making their “About Me”
-                pages.
+                            This is why it’s not surprising for experienced bloggers to take their time in making their
+                            “About Me”
+                            pages.
 
-                Female bloggers, for one, have a reputation for paying close attention to minor details when it comes to
-                their blogs, most especially, their “About Me” pages.
+                            Female bloggers, for one, have a reputation for paying close attention to minor details when
+                            it comes to
+                            their blogs, most especially, their “About Me” pages.
 
-                To prove this point, listed below are awesome about me examples by female bloggers. You can use these to
-                help you get started to create an engaging about page.
-            </p>
+                            To prove this point, listed below are awesome about me examples by female bloggers. You can
+                            use these to
+                            help you get started to create an engaging about page.
+                        </p>
+                    </div>
+                    <div class="col-2">
+                        <img src="images/girl_preview_rev_1.png" alt="my image">
+                    </div>
+                </div>
+            </div>
         </main>
+        <hr class="line">
         <footer>
             &copy; Copyright 2022. All rights reserved <br>
             <a href="mailto:bhattasaisnehitha@gmail.com">bhattasaisnehitha@gmail.com</a>
         </footer>
     </div>
+    <script>
+        var navOptions = document.getElementById("navOptions");
+        navOptions.style.maxHeight = "0px";
+        function menuToggle() {
+            if (navOptions.style.maxHeight == "0px") {
+                navOptions.style.maxHeight = "200px"
+            }
+            else {
+                navOptions.style.maxHeight = "0px"
+            }
+        }
+    </script>
 </body>
 
 </html>

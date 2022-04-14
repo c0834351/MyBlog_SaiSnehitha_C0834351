@@ -1,43 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/content.css">
     <title>My Personal Blog</title>
 </head>
+
 <body>
-    <div id ="container">
-    <header>
-        <a href="index.html"><img src="images/welcomeblog.jpeg" alt="My Personal Blog" height="275" width="845" class="blog"></a>
-    </header>
-    <nav>
-        <a href="index.html">Home</a> &nbsp; &nbsp;
-        <a href="about.html">About</a> &nbsp; &nbsp;
-        <a href="interest.html">Interest</a> &nbsp; &nbsp;
-        <a href="skills.html">Skills</a> &nbsp; &nbsp;
-        <a href="contact.html">Contact</a> &nbsp; &nbsp;
-    </nav>
-    <main>
-        <h1>About me!</h1>
-        <img src="images/happy.webp" alt="happy" width="250" height="250">
-        <p>My name is Sai Snehitha Bhatta.
-            I'm currently pursuing my Post Graduation in Mobile Application Design and Development at Lambton College.<br>
-            I graduated from JNTUH in the stream of Electronics in the year 2018. As a non-IT background, I have a passion for programming.
-            I did courses on Java, HTML and, Oracle.
-            After that, I got hired as a Java Intern in VBS, and later on, they hired me for a full-time Software Engineer. I got groomed in Java, Spring Boot, web services, Oracle, and Angular.
-            I worked on two projects in a team of 12.
-            Responsible for creating and designing both front and back end design as per the components.
-            Analyze the requirement and understand the function-related design.
-            I helped the supporting team members with the queries in the backend.
-            It was a great experience. I learned a lot working as a software engineer for 2years.
-            I have a good knowledge of object oriented programming (oops) and associated technologies.
-            I'm excited about this opportunity and, the overall job description is a good match for me</p>
-    </main>
-    <footer>
-        &copy; Copyright 2022. All rights reserved <br>
-        <a href="mailto:bhattasaisnehitha@gmail.com">bhattasaisnehitha@gmail.com</a>
-    </footer>
-</div>
+    <div id="container">
+        <header>
+            <a href="index.html"><img src="images/welcomeblog.jpeg" alt="My Personal Blog" class="blog"></a>
+        </header>
+        <div class="navbar">
+            <nav>
+                <ul id="navOptions">
+                    <li><a href="index.html">Home</a> </li>
+                    <li><a href="about.html">About</a> </li>
+                    <li><a href="interest.html">Interest</a> </li>
+                    <li><a href="skills.html">Skills</a> </li>
+                    <li><a href="contact.html">Contact</a> </li>
+                </ul>
+            </nav>
+            <img src="images/menu.png" alt="" class="menu-icon" onclick= "menuToggle()">
+        </div>
+        <main>
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-2">
+                        <h1>About me!</h1>
+                        <img src="images/happy.webp" alt="happy" width="300" height="300">
+                    </div>
+                    <div class="col-2">
+                        <p>My name is Sai Snehitha Bhatta.
+                            I'm currently pursuing my Post Graduation in Mobile Application Design and Development at
+                            Lambton College.<br>
+                            I graduated from JNTUH in the stream of Electronics in the year 2018. As a non-IT
+                            background, I have a passion for programming.
+                            I did courses on Java, HTML and, Oracle.
+                            After that, I got hired as a Java Intern in VBS, and later on, they hired me for a full-time
+                            Software Engineer. I got groomed in Java, Spring Boot, web services, Oracle, and Angular.
+                            I worked on two projects in a team of 12.
+                            Responsible for creating and designing both front and back end design as per the components.
+                            Analyze the requirement and understand the function-related design.
+                            I helped the supporting team members with the queries in the backend.
+                            It was a great experience. I learned a lot working as a software engineer for 2years.
+                            I have a good knowledge of object oriented programming (oops) and associated technologies.
+                            I'm excited about this opportunity and, the overall job description is a good match for me
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <hr class="line">
+        <footer>
+            &copy; Copyright 2022. All rights reserved <br>
+            <a href="mailto:bhattasaisnehitha@gmail.com">bhattasaisnehitha@gmail.com</a>
+        </footer>
+    </div>
+    <script>
+        var navOptions = document.getElementById("navOptions");
+        navOptions.style.maxHeight = "0px";
+        function menuToggle() {
+            if (navOptions.style.maxHeight == "0px") {
+                navOptions.style.maxHeight = "200px"
+            }
+            else {
+                navOptions.style.maxHeight = "0px"
+            }
+        }
+    </script>
 </body>
+
 </html>
