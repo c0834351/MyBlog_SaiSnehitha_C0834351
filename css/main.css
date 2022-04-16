@@ -101,6 +101,24 @@ a {
     margin: 20px;
     border: 1px solid green;
 }
+.col-1{
+    flex-basis: 100%;
+    max-width: 1300px;
+    margin: 20px;
+    padding: 5px;
+    background-color: rgb(199, 244, 199);
+    border-radius: 15px
+}
+.col-1 ul li{
+    list-style: none;
+    padding: 1px;
+}
+.col-1 ul li:hover{
+    padding: 3px;
+    background-color: grey;
+    cursor: pointer;
+}
+
 footer{
     max-width: 1300px;
     margin: auto;
