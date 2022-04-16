@@ -42,6 +42,17 @@ h1{
     padding: 20px;
 }
 
+/* contact Page CSS styles */
+.small-box .box-2{
+    flex-basis: 100%;
+    max-width: 1300px;
+    margin: 20px;
+    padding: 50px;
+    background-color: rgb(199, 244, 199);
+    border-radius: 15px
+}
+
+
 /*responsive*/
 
 @media only screen and (max-width: 600px) {

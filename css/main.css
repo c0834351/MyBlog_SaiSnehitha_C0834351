@@ -9,7 +9,7 @@ body{
     margin-right: auto;
 }
 p {
-    color: yellowgreen;
+    color: rgb(73, 129, 73);
 }
 .blog{
     margin-left: auto;
@@ -92,7 +92,10 @@ a {
     max-width: 100%;
     padding-top: 50px;
     padding-bottom: 50px;
-    padding-right: 20%;
+    padding-left: 10%;
+    padding-right: 10%;
+    border-radius: 15px;
+    background-color: rgb(199, 244, 199);
 }
 .line{
     margin: 20px;
@@ -102,7 +105,7 @@ footer{
     max-width: 1300px;
     margin: auto;
     padding: 20px;
-    background-color: grey;
+    background-color: rgb(44, 43, 43);
     border-radius: 15px;
     box-shadow: 12px 12px 12px grey;
     color: aliceblue;
